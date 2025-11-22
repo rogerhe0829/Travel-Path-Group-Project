@@ -1,10 +1,10 @@
 package use_case.get_previous_data;
 
-import entities.TravelRecord;
+import entity.TravelRecord;
 import java.util.List;
 
 /**
- * Interactor for the "get previous data" use case.
+ * Interactor for the "get previous data" use case
  */
 public class GetPreviousDataInteractor implements GetPreviousDataInputBoundary {
 

@@ -1,10 +1,10 @@
 package use_case.get_previous_data;
 
-import entities.TravelRecord;
+import entity.TravelRecord;
 import java.util.List;
 
 /**
- * Output data for the "get previous data" use case.
+ * Output data for the "get previous data" use case
  */
 public class GetPreviousDataOutputData {
 

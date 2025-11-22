@@ -1,7 +1,7 @@
 package use_case.get_previous_data;
 
 /**
- * Input boundary for the "get previous data" use case.
+ * Input boundary for the "get previous data" use case
  */
 public interface GetPreviousDataInputBoundary {
 

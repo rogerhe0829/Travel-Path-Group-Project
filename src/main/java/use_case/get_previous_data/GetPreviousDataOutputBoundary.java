@@ -7,7 +7,7 @@ package use_case.get_previous_data;
 public interface GetPreviousDataOutputBoundary {
 
     /**
-     * Present the results of loading past travel records.
+     * Present the results of loading past travel records
      *
      * @param outputData contains the user's past travel records
      */
