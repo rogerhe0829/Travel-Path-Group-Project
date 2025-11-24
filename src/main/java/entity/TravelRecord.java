@@ -1,4 +1,4 @@
-package entities;
+package entity;
 //travel record entities
 public class TravelRecord {
 
