@@ -2,6 +2,7 @@ package interface_adapter.notes;
 
 import use_case.add_note_to_stop.AddNoteToStopInputBoundary;
 import use_case.add_note_to_stop.AddNoteToStopInputData;
+// controller
 
 public class AddNoteToStopController {
     private final AddNoteToStopInputBoundary interactor;

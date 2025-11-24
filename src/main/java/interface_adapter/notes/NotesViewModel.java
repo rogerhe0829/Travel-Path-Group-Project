@@ -1,5 +1,6 @@
 package interface_adapter.notes;
 
+// viewmodel
 public class NotesViewModel {
     private String currentNoteText = "";
     private String errorMessage = "";
