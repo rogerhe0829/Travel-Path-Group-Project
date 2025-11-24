@@ -1,5 +1,5 @@
 package use_case.get_previous_data;
-// use case done
+// use case done.
 public class GetPreviousDataInputData {
 
     private final String username;
