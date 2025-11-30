@@ -1,7 +1,7 @@
 package GeolocationsAPIs;
 
 import entity.ItineraryStop;
-import entity.StopFactory; // Make sure you have this class in 'entity' package
+import entity.StopFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

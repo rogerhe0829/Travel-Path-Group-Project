@@ -3,7 +3,7 @@ package use_case.add_stop;
 import GeolocationsAPIs.APICaller;
 import entity.ItineraryStop;
 import entity.RouteInfo;
-import interface_adapter.reorder_delete_stops.RouteDataAccessInterface; // The shared interface
+import interface_adapter.reorder_delete_stops.RouteDataAccessInterface; // OUR SHARED INTERFACE
 import java.io.IOException;
 
 public class AddStopInteractor implements AddStopInputBoundary {
@@ -29,7 +29,6 @@ public class AddStopInteractor implements AddStopInputBoundary {
 
             // RECALCULATE ROUTE USING MPBOX
             RouteInfo newInfo = dataAccess.getRoute(dataAccess.getStops());
-            // Note: If you don't have a way to save RouteInfo, you might just pass it to output
 
             // NEW ROUTE
             AddStopOutputData output = new AddStopOutputData(dataAccess.getStops(), newInfo);
