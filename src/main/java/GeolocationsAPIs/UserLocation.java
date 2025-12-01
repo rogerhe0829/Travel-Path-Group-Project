@@ -2,7 +2,7 @@ package GeolocationsAPIs;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.Optional;
+
 
 /**
  Class for User cleaning up the user input for their location
@@ -26,7 +26,7 @@ public class UserLocation {
     }
 
     //HELPER METHODS FOR CLEANUP
-    private String formatAndEncodeAddress(String rawAddress) {
+    public String formatAndEncodeAddress(String rawAddress) {
         if (rawAddress == null || rawAddress.trim().isEmpty()) {
             return "";
         }
@@ -50,9 +50,8 @@ public class UserLocation {
                 .replaceAll("british columbia", "BC");
 
         //URL ENCODER TURNS THE SPACES INTO %20 OR '+'
-        String encoder = URLEncoder.encode(cleanedAddress, StandardCharsets.UTF_8);
 
-        return encoder;
+        return URLEncoder.encode(cleanedAddress, StandardCharsets.UTF_8);
     }
 
     private String formatPlusCode(String rawCode) {
